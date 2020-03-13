@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Lorem ipsum dolor sit amet, consectetur adipiscing elit</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+<h1 id="begin"></h1>
+<a href="ranking.html">Ranking</a>
+<a href="Article_3.html">Article_3</a>
+<a href="Article_4.html">Article_4</a>
+</div>
+<p id="article"></p>
+<img src="https://picsum.photos/640/420/?random" alt="Vestibulum pellentesque laoreet urna, eget dignissim lorem maximus vel" height="420" width="640"/>
+<p id="article2"></p>
+  <script>
+  var header = {
+  "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "type": "heading",
+      "model": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    };
+  var p1 = {
+      "type": "paragraph",
+      "model": {
+        "text": "Etiam ornare nulla in sem pharetra, vel varius magna tempus. Praesent pulvinar eget dolor vitae elementum. Donec id velit at sem gravida tristique non vitae lorem."
+      }
+    };
+  var photo = {
+      "type": "image",
+      "model": {
+        "url": "https://picsum.photos/640/420/?random",
+        "altText": "Vestibulum pellentesque laoreet urna, eget dignissim lorem maximus vel",
+        "height": "420",
+        "width": "640"
+      }
+    };
+    var p2 = {
+      "type": "paragraph",
+      "model": {
+        "text": "Nulla tortor nunc, posuere eu purus eget, ultricies ullamcorper sapien. Duis viverra lectus eget dolor gravida rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce molestie, odio at mattis auctor, mauris lectus luctus risus, eget pulvinar tortor erat a est."
+      }
+    };
+    var p3 = {
+      "type": "paragraph",
+      "model": {
+        "text": "Mauris accumsan maximus enim, eleifend consectetur turpis molestie malesuada. Proin vulputate dui non mattis venenatis. Nam ornare sapien eget nibh placerat, faucibus dapibus lacus consectetur."
+      }
+    };
+
+document.getElementById("begin").innerHTML =
+header.model.text;
+document.getElementById("article").innerHTML = p1.model.text;
+document.getElementById("article2").innerHTML = p2.model.text +"&nbsp" + p3.model.text;
+  </script>
+</body>
+</html>

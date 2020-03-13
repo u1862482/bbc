@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Maecenas venenatis lorem ut erat dictum, sed varius est porta</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <h1 id="begin"></h1>
+  </div>
+  <p id="tea" ></p1>
+    <li id="1" ></li>
+    <li id="2" ></li>
+    <li id="3" ></li>
+    <li id="4" ></li>
+  <p id="text" ></p>
+    <li id="5" ></li>
+    <li id="6" ></li>
+<p id="final text"></p>
+<script>
+var header = {
+    "title": "Maecenas venenatis lorem ut erat dictum, sed varius est porta",
+        "type": "heading",
+        "model": {
+          "text": "Maecenas venenatis lorem ut erat dictum, sed varius est porta"
+        }
+      };
+var p1 = {
+        "type": "paragraph",
+        "model": {
+          "text": "Donec et fermentum elit, in aliquet massa. Suspendisse mollis tristique vulputate. Ut congue, quam quis volutpat egestas, nisl sem tempus urna, quis consequat arcu leo vitae turpis."
+        }
+      };
+var bullet = {
+        "type": "list",
+        "model": {
+          "type": "unordered",
+          "it": "Donec commodo ipsum id tellus cursus, vel fermentum elit venenatis",
+            "me":"Nullam pulvinar orci felis, eget maximus ex imperdiet accumsan",
+            "s":"Nulla ut lectus at est fringilla pellentesque",
+            "list":"Duis elementum feugiat lacus non condimentum"
+        }
+      };
+var p2 = {
+        "type": "paragraph",
+        "model": {
+          "text": "Nunc auctor porttitor est, sed laoreet tortor mattis eget."
+        }
+      };
+var bullet1 = {
+        "type": "list",
+        "model": {
+          "type": "unordered",
+          "items":"Etiam ultrices libero eget orci maximus luctus",
+          "item": "Sed at luctus diam, eget tincidunt arcu"
+        }
+      };
+var p3 = {
+        "type": "paragraph",
+        "model": {
+          "text": "Cras sodales odio et elit scelerisque, at aliquam elit facilisis. Suspendisse erat erat, egestas sed vehicula ac, finibus non velit. Curabitur fermentum iaculis velit eget semper."
+        }
+      };
+  document.getElementById("begin").innerHTML =
+  header.model.text;
+  document.getElementById("tea").innerHTML =
+  p1.model.text;
+  document.getElementById("1").innerHTML =
+  bullet.model.it;
+  document.getElementById("2").innerHTML =
+  bullet.model.me;
+  document.getElementById("3").innerHTML =
+  bullet.model.s;
+  document.getElementById("4").innerHTML =
+  bullet.model.list;
+  document.getElementById("text").innerHTML =
+  p2.model.text;
+  document.getElementById("5").innerHTML =
+  bullet1.model.items;
+  document.getElementById("6").innerHTML =
+  bullet1.model.item;
+  document.getElementById("final text").innerHTML =
+  p3.model.text;
+</script>
+      </body>
+      </html>
